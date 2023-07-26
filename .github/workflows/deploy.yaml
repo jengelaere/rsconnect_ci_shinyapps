@@ -13,7 +13,7 @@ jobs:
       SHINYAPPS_NAME: ${{ secrets.SHINYAPPS_NAME }}
       SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
       SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
-      NAME_OF_APP: shinygouv-demo
+      NAME_OF_APP: rsconnect_ci_shinyapps
     steps:
       - uses: actions/checkout@v2
 
@@ -23,12 +23,6 @@ jobs:
         with:
           use-public-rspm: true
           r-version: '4.2.0'
-
-      ## Forcing the install of some packages because it
-      ## doesn't work on the CI for unidentified reasons)
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: rsconnect,remotes,pak,cpp11,hms,progress
 
       - name: Deploy package
         run: |
