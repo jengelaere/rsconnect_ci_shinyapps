@@ -1,0 +1,13 @@
+name: rsconnect_ci_shinyapps
+title: rsconnect_ci_shinyapps
+username: ssm-ecologie
+account: ssm-ecologie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9512206
+bundleId: 7499104
+url: https://ssm-ecologie.shinyapps.io/rsconnect_ci_shinyapps/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .github/worflows/deploy.yaml|dev/deploy.R|LICENSE|README.md
