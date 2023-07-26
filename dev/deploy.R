@@ -2,6 +2,8 @@ message("--- Add packages ---\n")
 
 install.packages("rsconnect")
 install.packages("shiny")
+install.packages("remotes")
+remotes::install_github("MaelTheuliere/COGiter")
 
 message("--- Add server ---\n")
 
