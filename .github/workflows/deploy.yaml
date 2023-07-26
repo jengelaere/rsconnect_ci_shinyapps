@@ -26,7 +26,4 @@ jobs:
           r-version: '4.2.0'
 
       - name: Deploy App
-        run: |
-          git config --local user.name "$GITHUB_ACTOR"
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          Rscript "dev/deploy.R"
+        run: Rscript "dev/deploy.R"
