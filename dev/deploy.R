@@ -3,7 +3,7 @@ message("--- Add packages ---\n")
 install.packages("rsconnect")
 install.packages("shiny")
 install.packages("remotes")
-remotes::install_github("MaelTheuliere/COGiter")
+remotes::install_github("MaelTheuliere/COGiter", auth_token = Sys.getenv("PAT"))
 
 message("--- Add server ---\n")
 

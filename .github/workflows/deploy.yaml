@@ -14,7 +14,7 @@ jobs:
       SHINYAPPS_TOKEN: ${{ secrets.SHINYAPPS_TOKEN }}
       SHINYAPPS_SECRET: ${{ secrets.SHINYAPPS_SECRET }}
       NAME_OF_APP: rsconnect_ci_shinyapps
-      GITHUB_PAT: ${{ secrets.PAT }}
+      PAT: ${{ secrets.PAT }}
     steps:
       - uses: actions/checkout@v2
 
