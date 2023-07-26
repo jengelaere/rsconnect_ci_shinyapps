@@ -8,6 +8,8 @@
 #
 
 library(shiny)
+library(COGiter)
+library(sf)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -27,7 +29,9 @@ ui <- fluidPage(
 
         # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("distPlot")
+           plotOutput("distPlot"),
+           br(),
+           paste0("Number of departement in Fance : ", nrow(departements))
         )
     )
 )
